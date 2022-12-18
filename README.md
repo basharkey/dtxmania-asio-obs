@@ -1,6 +1,9 @@
 # Use ASIO in DTXManiaNX while recording to OBS Studio
 This guide allows you to setup DTXManiaNX to use ASIO while still being able to record audio to OBS, all without the use of any extra hardware!
 
+## Other Notes
+I have tried using other solutions such as [JACK Audio Connection Kit](https://jackaudio.org/faq/jack_on_windows.html) and [ODeus ASIO Link Pro](https://give.academy/downloads/2018/03/03/ODeusASIOLinkPro/) to no avail. I was only able to get this working with [VoiceMeeter Banana](https://vb-audio.com/Voicemeeter/banana.htm).
+
 ## Setup VoiceMeeter Banana
 
 First step is to determine what output device you would like DTXManiaNX to ouput to and its sample rate. I use my `Speakers (High Definition Audio Device)` which has a sample rate of 48000 Hz (note this number down you will need it later).
@@ -67,3 +70,4 @@ Configure the capture properties as follows:
 ![obs-asio-capture-properties](images/obs-asio-capture-properties.png)
 
 And that's it you should now see your DTXManiaNX audio show up in OBS while using the ASIO driver, enjoy!
+
